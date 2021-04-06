@@ -66,31 +66,31 @@ def shares(filename):
 def generate():
     
     for i in range(10):
-        shares(str(i)+".png")
+        shares("data/"+str(i)+".png")
     
     image_list = []
     for i in range(10):
         for j in range(10):
             if(array[i][j]==0):
-                image_list.append('0.png')
+                image_list.append('data/0.png')
             elif(array[i][j]==1):
-                image_list.append('1.png')
+                image_list.append('data/1.png')
             elif(array[i][j]==2):
-                image_list.append('2.png')
+                image_list.append('data/2.png')
             elif(array[i][j]==3):
-                image_list.append('3.png')
+                image_list.append('data/3.png')
             elif(array[i][j]==4):
-                image_list.append('4.png')
+                image_list.append('data/4.png')
             elif(array[i][j]==5):
-                image_list.append('5.png')
+                image_list.append('data/5.png')
             elif(array[i][j]==6):
-                image_list.append('6.png')
+                image_list.append('data/6.png')
             elif(array[i][j]==7):
-                image_list.append('7.png')
+                image_list.append('data/7.png')
             elif(array[i][j]==8):
-                image_list.append('8.png')
+                image_list.append('data/8.png')
             else:
-                image_list.append('9.png')
+                image_list.append('data/9.png')
 
     images = [Image.open(x) for x in image_list]
     widths, heights = zip(*(i.size for i in images))
