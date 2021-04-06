@@ -137,25 +137,25 @@ def generate():
     for i in range(10):
         for j in range(10):
             if(array[i][j]==0):
-                image_list.append('0_2.png')
+                image_list.append('data/0_2.png')
             elif(array[i][j]==1):
-                image_list.append('1_2.png')
+                image_list.append('data/1_2.png')
             elif(array[i][j]==2):
-                image_list.append('2_2.png')
+                image_list.append('data/2_2.png')
             elif(array[i][j]==3):
-                image_list.append('3_2.png')
+                image_list.append('data/3_2.png')
             elif(array[i][j]==4):
-                image_list.append('4_2.png')
+                image_list.append('data/4_2.png')
             elif(array[i][j]==5):
-                image_list.append('5_2.png')
+                image_list.append('data/5_2.png')
             elif(array[i][j]==6):
-                image_list.append('6_2.png')
+                image_list.append('data/6_2.png')
             elif(array[i][j]==7):
-                image_list.append('7_2.png')
+                image_list.append('data/7_2.png')
             elif(array[i][j]==8):
-                image_list.append('8_2.png')
+                image_list.append('data/8_2.png')
             else:
-                image_list.append('9_2.png')
+                image_list.append('data/9_2.png')
 
     images = [Image.open(x) for x in image_list]
     widths, heights = zip(*(i.size for i in images))
@@ -217,48 +217,48 @@ def generate():
                 #print(rand[k])
                 if int(rand[k]/10) ==i and rand[k]%10 == j:
                     if(array[i][j]==0):
-                        img_list.append('0_1.png')
+                        img_list.append('data/0_1.png')
                         flag =1
                     
                     elif(array[i][j]==1):
-                        img_list.append('1_1.png')
+                        img_list.append('data/1_1.png')
                         flag =1
                     
                     elif(array[i][j]==2):
-                        img_list.append('2_1.png')
+                        img_list.append('data/2_1.png')
                         flag =1
                     
                     elif(array[i][j]==3):
-                        img_list.append('3_1.png')
+                        img_list.append('data/3_1.png')
                         flag =1
                     
                     elif(array[i][j]==4):
-                        img_list.append('4_1.png')
+                        img_list.append('data/4_1.png')
                         flag =1
                     
                     elif(array[i][j]==5):
-                        img_list.append('5_1.png')
+                        img_list.append('data/5_1.png')
                         flag =1
                     
                     elif(array[i][j]==6):
-                        img_list.append('6_1.png')
+                        img_list.append('data/6_1.png')
                         flag =1
                     
                     elif(array[i][j]==7):
-                        img_list.append('7_1.png')
+                        img_list.append('data/7_1.png')
                         flag =1
                     
                     elif(array[i][j]==8):
-                        img_list.append('8_1.png')
+                        img_list.append('data/8_1.png')
                         flag =1
                     
                     else:
-                        img_list.append('9_1.png')
+                        img_list.append('data/9_1.png')
                         flag =1
                     if flag==1:
                         break   
             if flag==0:
-                img_list.append('light_gray.png')
+                img_list.append('data/light_gray.png')
 
     images = [Image.open(x) for x in img_list]
     widths, heights = zip(*(i.size for i in images))
